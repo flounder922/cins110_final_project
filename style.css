@@ -1,0 +1,10 @@
+div.image {
+   float: right;
+   width: 75%;
+   text-align: left;
+}
+
+div.information {
+   float: left;
+   width: 25%;
+}
