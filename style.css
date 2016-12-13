@@ -34,3 +34,8 @@ div.burner_inserter {
     float: right;
     width: 25%;
 }
+
+#greeting {
+    font-size: 125%;
+    color: white;
+}
