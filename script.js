@@ -1,31 +1,71 @@
-//wood = 2;
-//raw_wood = 4;
-//coal = 8;
-//solid_fuel = 25;
-//rocket_fuel = 225;
+var materials = [
+    {"name":"wood", "burn_time": 2},
+    {"name":"raw_wood", "burn_time": 4},
+    {"name":"coal", "burn_time": 8},
+    {"name":"solid_fuel", "burn_time": 25},
+    {"name":"rocket_fuel", "burn_time": 225}
+]
 
-function burner_drill(f) {
-    var fuel_source = f.value;
-    var fuel_amount = fuel(fuel_source);
-    var consumption = .3;
-    var pollution = 10;
-    var time = fuel_amount * consumption;
+function burner_drill() {
+    var mat_array = [];
 
-    document.getElementById("interval").innerHTML = time + " seconds";
+    for(i = 0; i < materials.length; ++i) {
+        mat_array[i] = materials[i].burn_time * .3;
+    }
+
+    var temp = [];
+    for (var i = 0; i < mat_array.length; i++) {
+        temp[i] = materials[i].name + " burn rate " + mat_array[i] + " seconds<br>";
+        console.log(temp);
+    }
+
+    document.getElementById("interval").innerHTML = temp;
 }
 
-function fuel(f) {
-    if(f == "wood") {
-        return 2;
-    } else if (f == "raw_wood") {
-        return 4;
-    } else if (f == "coal") {
-        return 8;
-    } else if (f == "solid_fuel") {
-        return 25;
-    } else if (f == "rocket_fuel") {
-        return 225;
-    } else {
-        return 0;
+function stone_furnace() {
+    var mat_array = [];
+
+    for(i = 0; i < materials.length; ++i) {
+        mat_array[i] = materials[i].burn_time * .18;
     }
+
+    var temp = [];
+    for (var i = 0; i < mat_array.length; i++) {
+        temp[i] = materials[i].name + " burn rate " + mat_array[i] + " seconds<br>";
+        console.log(temp);
+    }
+
+    document.getElementById("stone_interval").innerHTML = temp;
+}
+
+function steel_furnace() {
+    var mat_array = [];
+
+    for(i = 0; i < materials.length; ++i) {
+        mat_array[i] = materials[i].burn_time * .18;
+    }
+
+    var temp = [];
+    for (var i = 0; i < mat_array.length; i++) {
+        temp[i] = materials[i].name + " burn rate " + mat_array[i] + " seconds<br>";
+        console.log(temp);
+    }
+
+    document.getElementById("steel_interval").innerHTML = temp;
+}
+
+function burner_inserter() {
+    var mat_array = [];
+
+    for(i = 0; i < materials.length; ++i) {
+        mat_array[i] = materials[i].burn_time * .18;
+    }
+
+    var temp = [];
+    for (var i = 0; i < mat_array.length; i++) {
+        temp[i] = materials[i].name + " burn rate " + mat_array[i] + " seconds<br>";
+        console.log(temp);
+    }
+
+    document.getElementById("inserter_interval").innerHTML = temp;
 }

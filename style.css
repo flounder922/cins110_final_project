@@ -14,3 +14,23 @@ div.information {
 div.form_info {
     padding: 25px 25px 25px 25px;
 }
+
+div.burner_drill {
+    float: right;
+    width: 25%;
+}
+
+div.stone_furnace {
+    float: right;
+    width: 25%;
+}
+
+div.steel_furnace {
+    float: right;
+    width: 25%;
+}
+
+div.burner_inserter {
+    float: right;
+    width: 25%;
+}

@@ -31,32 +31,27 @@
     <div>
         <div class="burner_drill form_info">
             <h2>Burner Drill</h2>
-            <form>
-                <select onchange="burner_drill(this)">
-                    <option></option>
-                    <option value="wood">Wood</option>
-                    <option value="raw_wood">Raw Wood</option>
-                    <option value="coal">Coal</option>
-                    <option value="solid_fuel">Solid Fuel</option>
-                    <option value="rocket_fuel">Rocket Fuel</option>
-                </select>
-            </form>
             <p>Longevity of Material</p>
+            <button onclick="burner_drill();">longevity</button>
             <p id="interval"></p>
         </div>
         <div class="stone_furnace form_info">
             <h2>Stone Furnace</h2>
-            <form class="form_info">
-                <select onchange="stone_furnace(this)">
-                    <option value="wood">Wood</option>
-                    <option value="raw_wood">Raw Wood</option>
-                    <option value="coal">Coal</option>
-                    <option value="solid_fuel">Solid Fuel</option>
-                    <option value="rocket_fuel">Rocket Fuel</option>
-                </select>
-            </form>
             <p>Longevity of Material</p>
-            <p id="interval"></p>
+            <button onclick="stone_furnace();">longevity</button>
+            <p id="stone_interval"></p>
+        </div>
+        <div class="steel_furnace form_info">
+            <h2>Stone Furnace</h2>
+            <p>Longevity of Material</p>
+            <button onclick="steel_furnace();">longevity</button>
+            <p id="steel_interval"></p>
+        </div>
+        <div class="burner_inserter form_info">
+            <h2>Stone Furnace</h2>
+            <p>Longevity of Material</p>
+            <button onclick="burner_inserter();">longevity</button>
+            <p id="inserter_interval"></p>
         </div>
     </div>
 </body>
