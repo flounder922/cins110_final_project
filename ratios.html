@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Factorio project</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Factorio</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Ratios<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div>
+        <div class="burner_drill form_info">
+            <h2>Burner Drill</h2>
+            <form>
+                <select onchange="burner_drill(this)">
+                    <option></option>
+                    <option value="wood">Wood</option>
+                    <option value="raw_wood">Raw Wood</option>
+                    <option value="coal">Coal</option>
+                    <option value="solid_fuel">Solid Fuel</option>
+                    <option value="rocket_fuel">Rocket Fuel</option>
+                </select>
+            </form>
+            <p>Longevity of Material</p>
+            <p id="interval"></p>
+        </div>
+        <div class="stone_furnace form_info">
+            <h2>Stone Furnace</h2>
+            <form class="form_info">
+                <select onchange="stone_furnace(this)">
+                    <option value="wood">Wood</option>
+                    <option value="raw_wood">Raw Wood</option>
+                    <option value="coal">Coal</option>
+                    <option value="solid_fuel">Solid Fuel</option>
+                    <option value="rocket_fuel">Rocket Fuel</option>
+                </select>
+            </form>
+            <p>Longevity of Material</p>
+            <p id="interval"></p>
+        </div>
+    </div>
+</body>
+</html>
